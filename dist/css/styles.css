@@ -96,6 +96,7 @@ body {
 .seal::before,
 .seal::after {
 	background-color: #5D8A45/*green*/;
+	box-shadow: 0 0 2px 1px black;
 	border-radius: 50% 0;
 	content:"";
 	display:block;
