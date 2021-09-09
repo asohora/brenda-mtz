@@ -127,7 +127,6 @@ body {
 .seal-center1 {transform:rotate(22.5deg);}
 .seal-center2 {transform:rotate(45deg);}
 .seal-center3 {transform:rotate(77.5deg);}
-.seal-center4 {box-shadow:none;}
 
 .seal-center4::after {
 	background-color: #444/*black*/;
