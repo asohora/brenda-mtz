@@ -130,10 +130,17 @@ body {
 	background-color:inherit;
 }
 
-.seal-center1 {transform:rotate(30deg);}
-.seal-center2 {transform:rotate(60deg);}
-.seal-center3 {transform:rotate(90deg);
-box-shadow:none;}
+.seal-center1 {
+	transform:rotate(30deg);
+}
+
+.seal-center2 {
+	transform:rotate(60deg);
+}
+.seal-center3 {
+	transform:rotate(90deg);
+	box-shadow:none;
+}
 
 .seal-center4 {
 	background-color: black;
