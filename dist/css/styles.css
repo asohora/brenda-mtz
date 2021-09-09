@@ -120,7 +120,7 @@ body {
 	transition: border 250ms;
 	z-index:2;
 }
-
+/*
 .seal-center {
 	border-radius: 5%;
 	box-shadow: 0 0 3px 0 black;
@@ -173,7 +173,7 @@ body {
 	left:100%;
 }
 
-
+*/
 
 .envelope.open .envelope-top{
 	transform: rotateX(180deg);
