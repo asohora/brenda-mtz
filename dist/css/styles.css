@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
-
 /* Basic setup */
 
 * {
@@ -24,7 +22,7 @@
 
 
 body {
-	background-color: #5D8A45;
+	background-color: #444;
 	display:grid;
 	min-height: 100vh;
 	padding: min(2vh, 2vw, 1em);
@@ -83,6 +81,7 @@ body {
 	transform-origin:top;
 	transition: transform 250ms linear;
 	width: 100%;
+	
 }
 
 .envelope-top::before {
@@ -111,15 +110,62 @@ body {
 	aspect-ratio:1/1;
 	background-color: hsl(var(--dark-color));
 	border-radius:50%;
-	border: 10px double black;
-	box-shadow: 1px 1px 3px 0 black;
+	box-shadow: 0 0 3px 0 black;
 	cursor:pointer;
+	display:grid;
 	height:80%;
 	position:absolute;
+	place-items:center;
 	top:60%;
 	transition: border 250ms;
 	z-index:2;
 }
+
+.seal-center {
+	border-radius: 5%;
+	box-shadow: 0 0 3px 0 black;
+	height: 85%;
+	width:85%;
+	position:absolute;
+	background-color:inherit;
+}
+
+.seal-center1 {transform:rotate(30deg);}
+.seal-center2 {transform:rotate(60deg);}
+.seal-center3 {transform:rotate(90deg);
+box-shadow:none;}
+
+.seal-center4 {
+	background-color: black;
+	border-radius: 50%;
+	height: 50%;
+	opacity: .7;
+	width: 50%;
+}
+
+.seal::before,
+.seal::after {
+	background-color: #5D8A45;
+	border-radius: 50% 0;
+	box-shadow: 0 0 3px 0 black;
+	content:"";
+	display:block;
+	height:80%;
+	position:absolute;
+	width:100%;
+	transform:rotate(20deg);
+	z-index:-1;
+
+}
+
+.seal::before {
+	right:100%;
+}
+
+.seal::after {
+	left:100%;
+}
+
 
 
 .envelope.open .envelope-top{
@@ -154,7 +200,6 @@ body {
 	display:grid;
 	height: max-content;
 	overflow:hidden;
-	padding: 2rem;
 	place-items:center;
 	position:relative;
 	text-align:justify;
@@ -193,9 +238,12 @@ body {
 
 .sender {
 	color: hsl(var(--dark-color));
-	font-size: .95em;
+	display:block;
+	font-size: 2.2em;
+	font-style:italic;
 	font-weight:bold;
-	text-align:right;
+	padding-block: 1em;
+	text-align:center;
 }
 
 /* Map */
@@ -219,6 +267,7 @@ body {
 	border-radius: 5%;
 	box-shadow: 1px 1px 3px 0 black;
 	height: min(70vh, 300px);
+	margin-block:1em;
 	transform-origin:top;
 	transition:height 250ms;
 	width: 90%;
